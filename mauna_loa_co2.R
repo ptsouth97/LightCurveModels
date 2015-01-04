@@ -1,4 +1,15 @@
-## Import data and generate a plot and fit a linear trend
+## This file contains 4 functions that model a set of data in a 
+## progressively more complicated fashion.  There is a linear fit,
+## parabolic (quadratic) fit, sinuoidal fit, and harmonic fit.  
+## The code also plots the residuals and returns statistical information
+## about the fit
+
+## The file can be tested on the attached CO2 data file.
+
+## This code modified from Grant Foster's book:  "Analyzing Light Curves"
+
+
+## FUNCTION 1:  Import data and generate a plot and fit a linear trend
 
 linear <- function(data_file){
   
@@ -25,7 +36,7 @@ linear <- function(data_file){
 }
 
 
-# fit a parabola (quadratic curve)
+# FUNCTION 2:  fit a parabola (quadratic curve)
 parabola <- function(data_file){
   
   data <- read.table(data_file)
@@ -52,7 +63,7 @@ parabola <- function(data_file){
   summary(xfit)
 }
 
-# fit a parabolic + sinusoid curve
+# FUNCTION 3:  fit a parabolic + sinusoid curve
 sinusoid <- function(data_file){
   
   data <- read.table(data_file)
@@ -80,7 +91,7 @@ sinusoid <- function(data_file){
   summary(xfit)
 }
 
-# fit a parabolic + sinsuoidal + 2 harmonic curve
+# FUNCTION 4:  fit a parabolic + sinsuoidal + 2 harmonic curve
 harmonic <- function(data_file){
   
   data <- read.table(data_file)
