@@ -4,7 +4,8 @@
 ## The code also plots the residuals and returns statistical information
 ## about the fit
 
-## The file can be tested on the attached CO2 data file.
+## The file can be tested on the attached Mauna Loa CO2 data file or 
+## downloaded from:  http://esrl.noaa.gov/gmd/ccgg/trends/
 
 ## This code modified from Grant Foster's book:  "Analyzing Light Curves"
 
